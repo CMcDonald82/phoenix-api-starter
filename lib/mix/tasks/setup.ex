@@ -62,8 +62,8 @@ defmodule Mix.Tasks.Setup do
   def rename_app(name, otp_name) do
     Mix.Shell.IO.info "Renaming app to #{name}/#{otp_name}"
     Rename.run(
-      {"PhoenixStarter", name},
-      {"phoenix_starter", otp_name}
+      {"PhoenixApiStarter", name},
+      {"phoenix_api_starter", otp_name}
     )
     :ok
   rescue 

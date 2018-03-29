@@ -44,7 +44,8 @@ docker-compose run phoenix mix deps.get
 NOTE: Before running this task, you can optionally edit the config in config/setup.exs. You can specify the new name and otp_name of the project in either of 2 ways: pass the names in via the command line (as in the command below), or set the values of 'name' and 'otp_name' in the setup config file (config/setup.exs). You can also set git_reinit: true in the config/setup.exs file to have the setup task initialize a fresh new git repo for your new project.
 ```
 docker-compose run phoenix mix setup <NewName> <new_otp_name>
-
+```
+```
 EXAMPLE: If we want to rename our new project to My App this command would be:
 docker-compose run phoenix mix setup MyApp my_app
 
