@@ -44,3 +44,5 @@ config :phoenix_api_starter, PhoenixApiStarter.Repo,
   database: "phoenix_api_starter_dev",
   hostname: "localhost",
   pool_size: 10
+
+import_config "setup.exs"
