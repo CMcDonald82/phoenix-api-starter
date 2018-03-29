@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   phoenix:
-    image: phoenix-base
+    image: phoenix-api-base
     command: mix phx.server
     environment:
       - MIX_ENV=dev

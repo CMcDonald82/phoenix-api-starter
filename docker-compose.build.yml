@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   phoenix:
-    image: phoenix-build
+    image: phoenix-api-build
     command: "/usr/sbin/sshd -D" 
     ports: 
       - "22:22"
