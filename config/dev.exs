@@ -42,7 +42,7 @@ config :phoenix_api_starter, PhoenixApiStarter.Repo,
   username: "postgres",
   password: "postgres",
   database: "phoenix_api_starter_dev",
-  hostname: "localhost",
+  hostname: "postgres",
   pool_size: 10
 
 import_config "setup.exs"
