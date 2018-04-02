@@ -36,7 +36,8 @@ end
 environment :prod do
   set include_erts: true
   set include_src: false
-  set cookie: :"(Skk;nuT(GCogbwjV2>69VT61yP6tGn(,!%B*rN1!fH0f6eF3aRQt]GzMtJuP7(f"
+  set cookie: "ignore"
+  set vm_args: Path.join(Path.expand(__DIR__), "./rel/files/vm.args.prod")
 end
 
 # You may define one or more releases in this file.
