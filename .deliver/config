@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+AUTO_VERSION=commit-count+git-revision+branch-unless-master
+APP=$PHOENIX_OTP_APP_NAME
+
+BUILD_HOST="localhost"
+BUILD_USER="builder"
+BUILD_AT="/tmp/edeliver/$APP/builds"
+
+STAGING_HOSTS=$PHOENIX_STARTER_STG_HOST
+STAGING_USER="deploy"
+TEST_AT="/home/deploy/staging"
+
+PRODUCTION_HOSTS=$PHOENIX_STARTER_PROD_HOST  
+PRODUCTION_USER="deploy"
+DELIVER_TO="/home/deploy/app_release"
+
+pre_erlang_clean_compile() {
+  status "Run phx.digest"
+  __sync_remote "
+    [ -f ~/.profile ] && source ~./profile
+    set -e
+    cd '$BUILD_AT'
+
+    APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phx.digest
+  "
+}
