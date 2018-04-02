@@ -53,9 +53,3 @@ Alternatively, we could set name: "MyApp" and otp_name: "my_app" in config/setup
 docker-compose run phoenix mix setup
 ```
 
-6. Create and migrate the database 
-```
-docker-compose run phoenix mix ecto.create
-docker-compose run phoenix mix ecto.migrate
-```
-
