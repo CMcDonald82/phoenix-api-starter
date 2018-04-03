@@ -1,9 +1,9 @@
 defmodule SetupTest do
   use ExUnit.Case, async: false
 
-  @app_dir "phoenix_starter_test_app"
-  @app_name "PhoenixStarterTestApp"
-  @git_repo "https://github.com/CMcDonald82/phoenix-starter.git"
+  @app_dir "phoenix_starter_api_test_app"
+  @app_name "PhoenixStarterApiTestApp"
+  @git_repo "https://github.com/CMcDonald82/phoenix-api-starter.git"
 
   setup_all do
     File.cd!("..")
