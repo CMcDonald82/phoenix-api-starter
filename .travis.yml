@@ -8,7 +8,7 @@ services:
 
 before_install:
   - sudo service postgresql stop
-  - docker build --target base -t phoenix-base:latest .
+  - docker build --target base -t phoenix-api-base:latest .
   - docker ps -a
 
 script:
