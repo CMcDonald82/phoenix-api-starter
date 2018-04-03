@@ -8,8 +8,4 @@ defmodule PhoenixApiStarterWeb.Router do
   scope "/api", PhoenixApiStarterWeb do
     pipe_through :api
   end
-
-  scope "/", PhoenixApiStarterWeb do
-     get "/*path", ApplicationController, :not_found 
-  end
 end
