@@ -1,4 +1,7 @@
 # phoenix-api-starter
+
+[![Build Status](https://travis-ci.org/CMcDonald82/phoenix-api-starter.svg?branch=master)](https://travis-ci.org/CMcDonald82/phoenix-api-starter)
+
 This project is a starting point for building an API backend with Phoenix. It is only the backend piece - you are free to use any frontend(s) you want, allowing maximum flexibility.
 
 This project includes:
