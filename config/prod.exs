@@ -22,7 +22,7 @@ config :phoenix_api_starter, PhoenixApiStarterWeb.Endpoint,
   server: true,
   root: ".",
   code_reloader: false,
-  version: Application.spec(:phoenix_starter, :vsn)
+  version: Application.spec(:phoenix_api_starter, :vsn)
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -31,7 +31,7 @@ config :logger, level: :info
 config :phoenix_api_starter, :environment, :prod
 
 # Configure your database
-config :phoenix_api_starter, PhoenixStarter.Repo,
+config :phoenix_api_starter, PhoenixApiStarter.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "${DB_USERNAME}",
   password: "${DB_PASSWORD}",
