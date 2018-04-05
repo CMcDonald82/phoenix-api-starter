@@ -28,10 +28,10 @@ config :phoenix_api_starter, PhoenixApiStarterWeb.Endpoint,
 config :logger, level: :info
 
 # Environment config
-config :phoenix_starter, :environment, :prod
+config :phoenix_api_starter, :environment, :prod
 
 # Configure your database
-config :phoenix_starter, PhoenixStarter.Repo,
+config :phoenix_api_starter, PhoenixStarter.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "${DB_USERNAME}",
   password: "${DB_PASSWORD}",
