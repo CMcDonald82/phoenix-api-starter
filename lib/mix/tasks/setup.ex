@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Setup do
   @shortdoc "Sets up a new clean-slate project using the phoenix-api-starter project as a base template"
 
   @doc """
-  The main function that runs all the necessary functions to setup the new app from the phoenix-starter project 
+  The main function that runs all the necessary functions to setup the new app from the phoenix-api-starter project 
   """
   def run([name, otp_name]) do
     with :ok <- rename_app(name, otp_name),
