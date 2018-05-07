@@ -1,7 +1,7 @@
 defmodule Mix.Tasks.Setup do
   use Mix.Task
 
-  @shortdoc "Sets up a new clean-slate project using the phoenix-starter project as a base template"
+  @shortdoc "Sets up a new clean-slate project using the phoenix-api-starter project as a base template"
 
   @doc """
   The main function that runs all the necessary functions to setup the new app from the phoenix-starter project 
