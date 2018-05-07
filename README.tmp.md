@@ -78,7 +78,7 @@ docker-compose run phoenix mix erlang_cookie
 Example of all the environment variables that need to be set on server:
 
 export REPLACE_OS_VARS=true
-export DB_NAME=phoenix_starter_prod
+export DB_NAME=phoenix_api_starter_prod
 export DB_USERNAME=postgres
 export DB_PASSWORD=my_secret_password
 export DB_HOSTNAME=localhost
