@@ -183,7 +183,5 @@ docker-compose run phoenix mix phx.gen.secret
 
 * Docker
   - [Install Erlang/Elixir](https://elixir-lang.org/install.html#unix-and-unix-like)
-  - [Install Node.js](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
-  - [Install Yarn](https://yarnpkg.com/lang/en/docs/install/#linux-tab)
   - [Install Phoenix (latest)](https://hexdocs.pm/phoenix/installation.html)
   - [Setup SSHd](https://docs.docker.com/engine/examples/running_ssh_service/)
