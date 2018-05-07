@@ -28,12 +28,12 @@ cp <path-to-ssh-pubkey-on-local-machine> ./ssh_key.pub
 
 NOTE: The containers in steps 3.a and 3.b MUST be built before going further since some of the following steps depend on them
 
-3. a.) Build the base Docker container (must be named phoenix-base since the docker-compose files depend on it). This container will be used for local development/debugging and running tests (locally and via Travis)
+3. a.) Build the base Docker container (must be named phoenix-api-base since the docker-compose files depend on it). This container will be used for local development/debugging and running tests (locally and via Travis)
 ```
 docker build --target base -t phoenix-api-base:latest .
 ```
 
-3. b.) Build the build Docker container (must be named phoenix-build since the docker-compose files depend on it). This container will be used to build releases in
+3. b.) Build the build Docker container (must be named phoenix-api-build since the docker-compose files depend on it). This container will be used to build releases in
 ```
 docker build -t phoenix-api-build:latest .
 ```
